@@ -7,15 +7,17 @@
 
 ```text
 📦 Flink-Watermark-Experiment
- ┣ 📂 Java                           # Flink Java 项目代码
- ┃ ┣ 📄 pom.xml                      # Maven 依赖配置
- ┃ ┗ 📂 src/main/java/com/example    # 核心代码目录
- ┃   ┣ ☕ FlinkWatermarkExperimentFull.java               #  滚动窗口实验作业
- ┃   ┗ ☕ FlinkWatermarkExperimentFull_SlidingWindow.java #  滑动窗口实验作业
+ ┣ 📂code
+ ┃ ┣ 📂 Java                           # Flink Java 项目代码
+ ┃ ┃ ┣ 📄 pom.xml                      # Maven 依赖配置
+ ┃ ┃ ┗ 📂 src/main/java/com/example    # 核心代码目录
+ ┃ ┃     ┣ ☕ FlinkWatermarkExperimentFull.java               #  滚动窗口实验作业
+ ┃ ┃     ┗ ☕ FlinkWatermarkExperimentFull_SlidingWindow.java #  滑动窗口实验作业
+ ┃ ┗ 📂 Python  
+ ┃    ┣ 🐍 comprehensive_analysis.py      # 数据分析与绘图脚本 (Python)
+ ┃    ┗ 🐍 flink_chaos_source.py          # 乱序数据生成器 (Python)
  ┣ 📂 data                           # 实验数据 (CSV)
  ┣ 📂 img                            # 实验结果图表
- ┣ 🐍 comprehensive_analysis.py      # 数据分析与绘图脚本 (Python)
- ┣ 🐍 flink_chaos_source.py          # 乱序数据生成器 (Python)
  ┣ 📄 analysis_report.txt            # 自动生成的分析报告文本
  ┗ 📄 README.md                      # 本实验报告
 ```
@@ -314,6 +316,7 @@
 | 成员 孔慧婷 | 核心代码 + 可视化 + 代码勘误 | 1. 编写 Flink Java 核心任务代码与窗口逻辑<br>2. 负责 Java 代码勘误与调试<br>3. 负责实验结果的可视化图表绘制<br>4. 部署workerA节点 |
 | 成员 姚佳怡 | 数据收集 + PPT + 代码勘误 | 1. 负责实验数据的运行与收集<br>2. 负责 Java 代码勘误与调试<br>3. 制作项目汇报 PPT <br>4. 部署workerB节点|
 | 成员 何霜 | 数据源 + 报告 + 视频 | 1. 开发乱序事件数据模拟器（Source 端代码）<br>2. 撰写最终实验分析报告<br>3. 负责最终视频的录制与剪辑 <br>4. 负责与master连接输送数据|
+
 
 
 
